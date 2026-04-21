@@ -83,7 +83,8 @@ input[type="submit"]:hover {
 .filter-image {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
-}.filter-image:hover {
+}
+.filter-image:hover {
     filter: grayscale(0%);
 }
 .quote {
@@ -99,4 +100,3 @@ input[type="submit"]:hover {
     font-size: 40px;
     color: #ccc;
 }
-
