@@ -1,0 +1,102 @@
+h2 {
+    color: rgb(105, 11, 77);
+}
+h1 {
+    font-size: 2em;
+}
+body {
+    background-color: lightgray;
+}
+.content-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #b378ad;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #d8b2ce;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgba(255, 255, 255, 0.717);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.transition-button {
+    background-color: #9cc8d6;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.transition-button:hover {
+    background-color: #5d8b9a;
+}
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: #e289ab;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+}
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgrey;
+}
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}.filter-image:hover {
+    filter: grayscale(0%);
+}
+.quote {
+    position:relative;
+    padding-left: 20px;
+    font-style: italic;
+}
+.quote::before {
+    content: "“";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 40px;
+    color: #ccc;
+}
+
