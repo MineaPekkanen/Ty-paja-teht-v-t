@@ -52,10 +52,13 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 @media (max-width: 600px) {
     .responsive-nav .nav-list {
         display: none;
+        flex-direction: column;
+        align-items: center;
     }
     .responsive-nav .menu-toggle {
         display: block;
